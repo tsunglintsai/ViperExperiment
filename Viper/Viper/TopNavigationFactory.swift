@@ -11,18 +11,19 @@ import UIKit
 struct TopNavigationFactory {
     var listFactory = ListFactory()
 
-    func createTopNavigationViewController() -> UIViewController {
+    func createTopNavigationViewController() -> (UIViewController, TopNavigationRouter) {
         let topNavigationViewController = TopNavigationViewController()
-        linkComponents(topNavigationViewController: topNavigationViewController)
-        return topNavigationViewController
+        let router = linkComponents(topNavigationViewController: topNavigationViewController)
+        return (topNavigationViewController, router)
     }
     
-    func linkComponents(topNavigationViewController: TopNavigationViewController) {
+    func linkComponents(topNavigationViewController: TopNavigationViewController) -> TopNavigationRouter {
         let router = TopNavigationRouter()
         var interactor = TopNavigationInteractor()
         let presenter = TopNavigationPresenter(view: topNavigationViewController, router: router, interactor: interactor)
         topNavigationViewController.topNavigationViewEventHandler = presenter
         interactor.output = presenter
+        return router
     }
 }
 

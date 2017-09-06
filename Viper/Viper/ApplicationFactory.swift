@@ -8,15 +8,15 @@
 
 import UIKit
 
-protocol ApplicationEventHandler {
-    mutating func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
-}
+protocol ApplicationEventHandler: UIApplicationDelegate { }
 
 struct ApplicationFactory {
-    func createApplication(window: UIWindow) -> ApplicationEventHandler {
-        var interactor = ApplicationInteractor()
-        let presentor = ApplicationPresentor(interactor: interactor, window: window)
+    func createApplication() -> ApplicationEventHandler {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let interactor = ApplicationInteractor()
+        let router = ApplicationRouter(onboardingFactory: OnboardingFactory(), topNavigationFactory: TopNavigationFactory(), topNavigationRouter: nil, window: window)
+        let presentor = ApplicationPresentor(interactor: interactor, router: router)
         interactor.presentor = presentor
-        return presentor
+        return interactor
     }
 }

@@ -6,24 +6,30 @@
 //  Copyright © 2017 Henry Tsai. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-struct ApplicationPresentor {
-    var interactor: ApplicationInteractor
-    var window: UIWindow?
+class ApplicationPresentor {
+    fileprivate weak var interactor: ApplicationInteractor?
+    fileprivate var router: ApplicationRouterProtocol
     
-    mutating func updateApplicationState(state: ApplicationState) {
-        interactor.applicationState = state
+    init(interactor: ApplicationInteractor, router: ApplicationRouterProtocol) {
+        self.interactor = interactor
+        self.router = router
     }
-}
-
-extension ApplicationPresentor: ApplicationEventHandler {
-    mutating func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        updateApplicationState(state: .active)
-        return true
+    
+    func updateApplicationState(state: ApplicationState) {
+        interactor?.applicationState = state
     }
 }
 
 extension ApplicationPresentor: ApplicationInteractorOutput {
-    
+    func applicationDidLaunch() {
+        router.initContainer()
+    }
+    func applicationInitUI() {
+        router.initTopView()
+    }
+    func enterOnboarding() {
+        router.displayOnBoarding()
+    }
 }
