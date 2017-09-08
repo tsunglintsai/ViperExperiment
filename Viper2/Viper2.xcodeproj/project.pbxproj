@@ -7,41 +7,212 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1133561F61BEFB00A6B256 /* Viper.h in Headers */ = {isa = PBXBuildFile; fileRef = AD1133541F61BEFB00A6B256 /* Viper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD1133591F61BEFB00A6B256 /* Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1133521F61BEFB00A6B256 /* Viper.framework */; };
+		AD11335A1F61BEFB00A6B256 /* Viper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD1133521F61BEFB00A6B256 /* Viper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD11335E1F61BF0700A6B256 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD46C8481F61BCA300F500B3 /* AppModule.swift */; };
+		AD1133601F61BFD600A6B256 /* AppModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD11335F1F61BFD600A6B256 /* AppModuleFactory.swift */; };
+		AD1133611F61C00200A6B256 /* ViperModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66CDA81F61B4DB001201CA /* ViperModule.swift */; };
+		AD11336C1F61D58F00A6B256 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD11336B1F61D58F00A6B256 /* AppModule.swift */; };
+		AD11336F1F61D5E700A6B256 /* RootModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD11336E1F61D5E700A6B256 /* RootModule.swift */; };
+		AD1133731F61D6B600A6B256 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1133721F61D6B600A6B256 /* RootView.swift */; };
+		AD1133751F61D6C200A6B256 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1133741F61D6C200A6B256 /* RootPresenter.swift */; };
+		AD1133771F61D6CC00A6B256 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1133761F61D6CC00A6B256 /* RootInteractor.swift */; };
+		AD1133791F61D6D400A6B256 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1133781F61D6D400A6B256 /* RootRouter.swift */; };
+		ADEF6A441F61DCA600791CB4 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6A431F61DCA600791CB4 /* Promise.swift */; };
+		ADEF6A4C1F61F57D00791CB4 /* WelcomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6A4B1F61F57D00791CB4 /* WelcomeModule.swift */; };
+		ADEF6A4E1F61F58C00791CB4 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6A4D1F61F58C00791CB4 /* WelcomeView.swift */; };
+		ADEF6A501F61F5A200791CB4 /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6A4F1F61F5A200791CB4 /* WelcomePresenter.swift */; };
+		ADEF6A521F61F5AE00791CB4 /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6A511F61F5AE00791CB4 /* WelcomeInteractor.swift */; };
+		ADEF6A541F61F5B600791CB4 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6A531F61F5B600791CB4 /* WelcomeRouter.swift */; };
+		ADEF6A561F620D9200791CB4 /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6A551F620D9200791CB4 /* RootContract.swift */; };
+		ADEF6A591F6213EE00791CB4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6A581F6213EE00791CB4 /* UserData.swift */; };
 		BA66CD961F61B4BE001201CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66CD951F61B4BE001201CA /* AppDelegate.swift */; };
-		BA66CD981F61B4BE001201CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66CD971F61B4BE001201CA /* ViewController.swift */; };
 		BA66CD9B1F61B4BE001201CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA66CD991F61B4BE001201CA /* Main.storyboard */; };
 		BA66CD9D1F61B4BE001201CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA66CD9C1F61B4BE001201CA /* Assets.xcassets */; };
 		BA66CDA01F61B4BE001201CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA66CD9E1F61B4BE001201CA /* LaunchScreen.storyboard */; };
-		BA66CDA91F61B4DB001201CA /* ViperModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66CDA81F61B4DB001201CA /* ViperModule.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AD1133571F61BEFB00A6B256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA66CD8A1F61B4BE001201CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1133511F61BEFB00A6B256;
+			remoteInfo = Viper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD46C8471F61BC9600F500B3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AD11335A1F61BEFB00A6B256 /* Viper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AD1133521F61BEFB00A6B256 /* Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1133541F61BEFB00A6B256 /* Viper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Viper.h; sourceTree = "<group>"; };
+		AD1133551F61BEFB00A6B256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD11335F1F61BFD600A6B256 /* AppModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModuleFactory.swift; sourceTree = "<group>"; };
+		AD11336B1F61D58F00A6B256 /* AppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		AD11336E1F61D5E700A6B256 /* RootModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModule.swift; sourceTree = "<group>"; };
+		AD1133721F61D6B600A6B256 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		AD1133741F61D6C200A6B256 /* RootPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
+		AD1133761F61D6CC00A6B256 /* RootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		AD1133781F61D6D400A6B256 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		AD46C8481F61BCA300F500B3 /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppModule.swift; path = ../AppModule.swift; sourceTree = "<group>"; };
+		ADEF6A431F61DCA600791CB4 /* Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		ADEF6A4B1F61F57D00791CB4 /* WelcomeModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeModule.swift; sourceTree = "<group>"; };
+		ADEF6A4D1F61F58C00791CB4 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		ADEF6A4F1F61F5A200791CB4 /* WelcomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		ADEF6A511F61F5AE00791CB4 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		ADEF6A531F61F5B600791CB4 /* WelcomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		ADEF6A551F620D9200791CB4 /* RootContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
+		ADEF6A581F6213EE00791CB4 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		BA66CD921F61B4BE001201CA /* Viper2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viper2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA66CD951F61B4BE001201CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA66CD971F61B4BE001201CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA66CD9A1F61B4BE001201CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA66CD9C1F61B4BE001201CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA66CD9F1F61B4BE001201CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA66CDA11F61B4BE001201CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA66CDA81F61B4DB001201CA /* ViperModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModule.swift; sourceTree = "<group>"; };
+		BA66CDA81F61B4DB001201CA /* ViperModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModule.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BA66CD8F1F61B4BE001201CA /* Frameworks */ = {
+		AD11334E1F61BEFB00A6B256 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA66CD8F1F61B4BE001201CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1133591F61BEFB00A6B256 /* Viper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD1133531F61BEFB00A6B256 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				AD1133541F61BEFB00A6B256 /* Viper.h */,
+				AD46C8481F61BCA300F500B3 /* AppModule.swift */,
+				AD11335F1F61BFD600A6B256 /* AppModuleFactory.swift */,
+				BA66CDA81F61B4DB001201CA /* ViperModule.swift */,
+				AD1133551F61BEFB00A6B256 /* Info.plist */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		AD11336D1F61D5BF00A6B256 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				AD11336E1F61D5E700A6B256 /* RootModule.swift */,
+				ADEF6A551F620D9200791CB4 /* RootContract.swift */,
+				AD1133781F61D6D400A6B256 /* RootRouter.swift */,
+				AD1133721F61D6B600A6B256 /* RootView.swift */,
+				AD1133741F61D6C200A6B256 /* RootPresenter.swift */,
+				AD1133761F61D6CC00A6B256 /* RootInteractor.swift */,
+			);
+			name = root;
+			sourceTree = "<group>";
+		};
+		AD46C8311F61B9C700F500B3 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				AD11336B1F61D58F00A6B256 /* AppModule.swift */,
+				AD11336D1F61D5BF00A6B256 /* root */,
+				ADEF6A461F61F4B200791CB4 /* login */,
+				ADEF6A451F61F4A000791CB4 /* logout */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		ADEF6A421F61DC9C00791CB4 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				ADEF6A431F61DCA600791CB4 /* Promise.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		ADEF6A451F61F4A000791CB4 /* logout */ = {
+			isa = PBXGroup;
+			children = (
+				ADEF6A481F61F50D00791CB4 /* signin */,
+				ADEF6A471F61F4FC00791CB4 /* welcome */,
+			);
+			name = logout;
+			sourceTree = "<group>";
+		};
+		ADEF6A461F61F4B200791CB4 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				ADEF6A4A1F61F52000791CB4 /* main */,
+				ADEF6A491F61F51900791CB4 /* onbaording */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		ADEF6A471F61F4FC00791CB4 /* welcome */ = {
+			isa = PBXGroup;
+			children = (
+				ADEF6A4B1F61F57D00791CB4 /* WelcomeModule.swift */,
+				ADEF6A531F61F5B600791CB4 /* WelcomeRouter.swift */,
+				ADEF6A4D1F61F58C00791CB4 /* WelcomeView.swift */,
+				ADEF6A4F1F61F5A200791CB4 /* WelcomePresenter.swift */,
+				ADEF6A511F61F5AE00791CB4 /* WelcomeInteractor.swift */,
+			);
+			name = welcome;
+			sourceTree = "<group>";
+		};
+		ADEF6A481F61F50D00791CB4 /* signin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = signin;
+			sourceTree = "<group>";
+		};
+		ADEF6A491F61F51900791CB4 /* onbaording */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = onbaording;
+			sourceTree = "<group>";
+		};
+		ADEF6A4A1F61F52000791CB4 /* main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		ADEF6A571F6213CD00791CB4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				ADEF6A581F6213EE00791CB4 /* UserData.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
 		BA66CD891F61B4BE001201CA = {
 			isa = PBXGroup;
 			children = (
-				BA66CDA71F61B4C8001201CA /* Framework */,
 				BA66CD941F61B4BE001201CA /* Viper2 */,
+				AD1133531F61BEFB00A6B256 /* Viper */,
 				BA66CD931F61B4BE001201CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				BA66CD921F61B4BE001201CA /* Viper2.app */,
+				AD1133521F61BEFB00A6B256 /* Viper.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,8 +229,10 @@
 		BA66CD941F61B4BE001201CA /* Viper2 */ = {
 			isa = PBXGroup;
 			children = (
+				ADEF6A571F6213CD00791CB4 /* Entity */,
+				ADEF6A421F61DC9C00791CB4 /* Utility */,
+				AD46C8311F61B9C700F500B3 /* Module */,
 				BA66CD951F61B4BE001201CA /* AppDelegate.swift */,
-				BA66CD971F61B4BE001201CA /* ViewController.swift */,
 				BA66CD991F61B4BE001201CA /* Main.storyboard */,
 				BA66CD9C1F61B4BE001201CA /* Assets.xcassets */,
 				BA66CD9E1F61B4BE001201CA /* LaunchScreen.storyboard */,
@@ -67,17 +241,38 @@
 			path = Viper2;
 			sourceTree = "<group>";
 		};
-		BA66CDA71F61B4C8001201CA /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				BA66CDA81F61B4DB001201CA /* ViperModule.swift */,
-			);
-			name = Framework;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		AD11334F1F61BEFB00A6B256 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1133561F61BEFB00A6B256 /* Viper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		AD1133511F61BEFB00A6B256 /* Viper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD11335D1F61BEFB00A6B256 /* Build configuration list for PBXNativeTarget "Viper" */;
+			buildPhases = (
+				AD11334D1F61BEFB00A6B256 /* Sources */,
+				AD11334E1F61BEFB00A6B256 /* Frameworks */,
+				AD11334F1F61BEFB00A6B256 /* Headers */,
+				AD1133501F61BEFB00A6B256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Viper;
+			productName = Viper;
+			productReference = AD1133521F61BEFB00A6B256 /* Viper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		BA66CD911F61B4BE001201CA /* Viper2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA66CDA41F61B4BE001201CA /* Build configuration list for PBXNativeTarget "Viper2" */;
@@ -85,10 +280,12 @@
 				BA66CD8E1F61B4BE001201CA /* Sources */,
 				BA66CD8F1F61B4BE001201CA /* Frameworks */,
 				BA66CD901F61B4BE001201CA /* Resources */,
+				AD46C8471F61BC9600F500B3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AD1133581F61BEFB00A6B256 /* PBXTargetDependency */,
 			);
 			name = Viper2;
 			productName = Viper2;
@@ -105,6 +302,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Henry Tsai";
 				TargetAttributes = {
+					AD1133511F61BEFB00A6B256 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = U7Y66H7DX4;
+						ProvisioningStyle = Automatic;
+					};
 					BA66CD911F61B4BE001201CA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = U7Y66H7DX4;
@@ -126,11 +328,19 @@
 			projectRoot = "";
 			targets = (
 				BA66CD911F61B4BE001201CA /* Viper2 */,
+				AD1133511F61BEFB00A6B256 /* Viper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AD1133501F61BEFB00A6B256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA66CD901F61B4BE001201CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,17 +354,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AD11334D1F61BEFB00A6B256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1133601F61BFD600A6B256 /* AppModuleFactory.swift in Sources */,
+				AD1133611F61C00200A6B256 /* ViperModule.swift in Sources */,
+				AD11335E1F61BF0700A6B256 /* AppModule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA66CD8E1F61B4BE001201CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA66CDA91F61B4DB001201CA /* ViperModule.swift in Sources */,
-				BA66CD981F61B4BE001201CA /* ViewController.swift in Sources */,
+				AD1133731F61D6B600A6B256 /* RootView.swift in Sources */,
 				BA66CD961F61B4BE001201CA /* AppDelegate.swift in Sources */,
+				ADEF6A4C1F61F57D00791CB4 /* WelcomeModule.swift in Sources */,
+				ADEF6A591F6213EE00791CB4 /* UserData.swift in Sources */,
+				AD1133791F61D6D400A6B256 /* RootRouter.swift in Sources */,
+				ADEF6A501F61F5A200791CB4 /* WelcomePresenter.swift in Sources */,
+				ADEF6A561F620D9200791CB4 /* RootContract.swift in Sources */,
+				ADEF6A541F61F5B600791CB4 /* WelcomeRouter.swift in Sources */,
+				AD11336C1F61D58F00A6B256 /* AppModule.swift in Sources */,
+				ADEF6A4E1F61F58C00791CB4 /* WelcomeView.swift in Sources */,
+				AD11336F1F61D5E700A6B256 /* RootModule.swift in Sources */,
+				ADEF6A441F61DCA600791CB4 /* Promise.swift in Sources */,
+				ADEF6A521F61F5AE00791CB4 /* WelcomeInteractor.swift in Sources */,
+				AD1133771F61D6CC00A6B256 /* RootInteractor.swift in Sources */,
+				AD1133751F61D6C200A6B256 /* RootPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD1133581F61BEFB00A6B256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD1133511F61BEFB00A6B256 /* Viper */;
+			targetProxy = AD1133571F61BEFB00A6B256 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BA66CD991F61B4BE001201CA /* Main.storyboard */ = {
@@ -176,6 +416,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AD11335B1F61BEFB00A6B256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U7Y66H7DX4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Viper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pandora.Viper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD11335C1F61BEFB00A6B256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U7Y66H7DX4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Viper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pandora.Viper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		BA66CDA21F61B4BE001201CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -272,7 +558,9 @@
 		BA66CDA51F61B4BE001201CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = U7Y66H7DX4;
 				INFOPLIST_FILE = Viper2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -285,7 +573,9 @@
 		BA66CDA61F61B4BE001201CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = U7Y66H7DX4;
 				INFOPLIST_FILE = Viper2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -298,6 +588,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AD11335D1F61BEFB00A6B256 /* Build configuration list for PBXNativeTarget "Viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD11335B1F61BEFB00A6B256 /* Debug */,
+				AD11335C1F61BEFB00A6B256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BA66CD8D1F61B4BE001201CA /* Build configuration list for PBXProject "Viper2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -314,6 +613,7 @@
 				BA66CDA61F61B4BE001201CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

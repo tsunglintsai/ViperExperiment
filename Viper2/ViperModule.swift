@@ -8,26 +8,19 @@
 
 import Foundation
 
-protocol Router: class {
-    weak var presenter: Presenter! { get set }
-    var view: UserInterface! { get }
+public protocol Router: class {
 }
 
-protocol UserInterface: class {
-    var presenter: Presenter! { get set }
+public protocol UserInterface: class {
 }
 
-protocol Presenter: class {
-    var interactor: Interactor! { get set }
-    weak var view: UserInterface! { get set }
-    var router: Router! { get set }
+public protocol Presenter: class {
 }
 
-protocol Interactor: class {
-    weak var presenter: Presenter! { get set }
+public protocol Interactor: class {
 }
 
-protocol ViperModule {
+public protocol ViperModule {
     var router: Router { get }
     var view: UserInterface { get }
     var presenter: Presenter { get }
