@@ -37,7 +37,7 @@ struct RootModule: ViperModule {
         let view = RootView()
         let router = RootRouter(view: view)
         let presenter = RootPresenter(router: router)
-        let interactor = RootInteractor()
+        let interactor = RootInteractor(entityManager: UserDefaults.standard)
         interactor.presenter = presenter
         self.router = router
         self.view = view

@@ -11,8 +11,13 @@ import Viper
 
 class WelcomeInteractor {
     weak var presenter: WelcomePresenter?
+    var entityManager: EntityManager
+    init(entityManager: EntityManager) {
+        self.entityManager = entityManager
+    }
 }
 
 extension WelcomeInteractor: Interactor {
-    
+    func moduleInitialized() {
+    }
 }

@@ -10,9 +10,21 @@ import Foundation
 import Viper
 
 class WelcomePresenter {
-    weak var welcomeModuleDelegate: WelcomeModuleDelegate?
+    var router: WelcomeRouter
+    var interactor: WelcomeInteractor
+    weak var view: WelcomeView?
+    init(router: WelcomeRouter, interactor: WelcomeInteractor) {
+        self.router = router
+        self.interactor = interactor
+    }
 }
 
 extension WelcomePresenter: Presenter {
     
+}
+
+extension WelcomePresenter {
+    func dismissButtonTapped() {
+        router.dismissWelcome()
+    }
 }

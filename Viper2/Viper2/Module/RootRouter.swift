@@ -27,7 +27,7 @@ extension RootRouter: Router {
 extension RootRouter {
     func initRootContainer() {
         view?.view.frame = window.bounds
-        view?.view.backgroundColor = UIColor.blue
+        view?.view.backgroundColor = UIColor.white
         window.rootViewController = view
         window.makeKeyAndVisible()
         print("container initlized")
@@ -35,16 +35,29 @@ extension RootRouter {
     
     func showLogout() {
         guard let view = view else { return }
-        let module = WelcomeModule()
+        let module = LogoutModule()
         guard let newView = module.view as? UIViewController else { return }
         newView.willMove(toParentViewController: view)
         view.addChildViewController(newView)
         newView.view.frame = view.view.bounds
         view.view.addSubview(newView.view)
         newView.didMove(toParentViewController: view)
+        (module.router as? LogoutRouter)?.moduleDelegate = self
+        (module.interactor as? LogoutInteractor)?.moduleInitialized()
     }
     
     func showLogin() {
-        
+        print("show login")
+    }
+}
+
+extension RootRouter: LogoutModuleDelegate {
+    func signInComplete() {
+        view?.childViewControllers.forEach{ (viewController) in
+            viewController.willMove(toParentViewController: nil)
+            viewController.view.removeFromSuperview()
+            viewController.removeFromParentViewController()
+        }
+        showLogin()
     }
 }

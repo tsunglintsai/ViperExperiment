@@ -27,6 +27,17 @@
 		ADEF6A541F61F5B600791CB4 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6A531F61F5B600791CB4 /* WelcomeRouter.swift */; };
 		ADEF6A561F620D9200791CB4 /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6A551F620D9200791CB4 /* RootContract.swift */; };
 		ADEF6A591F6213EE00791CB4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6A581F6213EE00791CB4 /* UserData.swift */; };
+		BA1B4E461F621FD8006A288B /* LogoutModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B4E451F621FD8006A288B /* LogoutModule.swift */; };
+		BA1B4E481F622016006A288B /* LogoutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B4E471F622016006A288B /* LogoutRouter.swift */; };
+		BA1B4E4A1F62204A006A288B /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B4E491F62204A006A288B /* LogoutView.swift */; };
+		BA1B4E4C1F6220D4006A288B /* LogoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B4E4B1F6220D4006A288B /* LogoutPresenter.swift */; };
+		BA1B4E4E1F622159006A288B /* LogoutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B4E4D1F622159006A288B /* LogoutInteractor.swift */; };
+		BA62A0581F64493700836C93 /* signinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA62A0521F64493700836C93 /* signinInteractor.swift */; };
+		BA62A0591F64493700836C93 /* signinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA62A0531F64493700836C93 /* signinPresenter.swift */; };
+		BA62A05A1F64493700836C93 /* signinProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA62A0541F64493700836C93 /* signinProtocols.swift */; };
+		BA62A05B1F64493700836C93 /* signinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA62A0551F64493700836C93 /* signinRouter.swift */; };
+		BA62A05C1F64493700836C93 /* signinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA62A0561F64493700836C93 /* signinViewController.swift */; };
+		BA62A05D1F64493700836C93 /* signinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA62A0571F64493700836C93 /* signinViewController.xib */; };
 		BA66CD961F61B4BE001201CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66CD951F61B4BE001201CA /* AppDelegate.swift */; };
 		BA66CD9B1F61B4BE001201CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA66CD991F61B4BE001201CA /* Main.storyboard */; };
 		BA66CD9D1F61B4BE001201CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA66CD9C1F61B4BE001201CA /* Assets.xcassets */; };
@@ -77,6 +88,17 @@
 		ADEF6A531F61F5B600791CB4 /* WelcomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
 		ADEF6A551F620D9200791CB4 /* RootContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
 		ADEF6A581F6213EE00791CB4 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		BA1B4E451F621FD8006A288B /* LogoutModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutModule.swift; sourceTree = "<group>"; };
+		BA1B4E471F622016006A288B /* LogoutRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutRouter.swift; sourceTree = "<group>"; };
+		BA1B4E491F62204A006A288B /* LogoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
+		BA1B4E4B1F6220D4006A288B /* LogoutPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutPresenter.swift; sourceTree = "<group>"; };
+		BA1B4E4D1F622159006A288B /* LogoutInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutInteractor.swift; sourceTree = "<group>"; };
+		BA62A0521F64493700836C93 /* signinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signinInteractor.swift; sourceTree = "<group>"; };
+		BA62A0531F64493700836C93 /* signinPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signinPresenter.swift; sourceTree = "<group>"; };
+		BA62A0541F64493700836C93 /* signinProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signinProtocols.swift; sourceTree = "<group>"; };
+		BA62A0551F64493700836C93 /* signinRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signinRouter.swift; sourceTree = "<group>"; };
+		BA62A0561F64493700836C93 /* signinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signinViewController.swift; sourceTree = "<group>"; };
+		BA62A0571F64493700836C93 /* signinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = signinViewController.xib; sourceTree = "<group>"; };
 		BA66CD921F61B4BE001201CA /* Viper2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viper2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA66CD951F61B4BE001201CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA66CD9A1F61B4BE001201CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -152,6 +174,7 @@
 		ADEF6A451F61F4A000791CB4 /* logout */ = {
 			isa = PBXGroup;
 			children = (
+				BA1B4E441F621FBD006A288B /* container */,
 				ADEF6A481F61F50D00791CB4 /* signin */,
 				ADEF6A471F61F4FC00791CB4 /* welcome */,
 			);
@@ -182,6 +205,12 @@
 		ADEF6A481F61F50D00791CB4 /* signin */ = {
 			isa = PBXGroup;
 			children = (
+				BA62A0521F64493700836C93 /* signinInteractor.swift */,
+				BA62A0531F64493700836C93 /* signinPresenter.swift */,
+				BA62A0541F64493700836C93 /* signinProtocols.swift */,
+				BA62A0551F64493700836C93 /* signinRouter.swift */,
+				BA62A0561F64493700836C93 /* signinViewController.swift */,
+				BA62A0571F64493700836C93 /* signinViewController.xib */,
 			);
 			name = signin;
 			sourceTree = "<group>";
@@ -206,6 +235,18 @@
 				ADEF6A581F6213EE00791CB4 /* UserData.swift */,
 			);
 			name = Entity;
+			sourceTree = "<group>";
+		};
+		BA1B4E441F621FBD006A288B /* container */ = {
+			isa = PBXGroup;
+			children = (
+				BA1B4E451F621FD8006A288B /* LogoutModule.swift */,
+				BA1B4E471F622016006A288B /* LogoutRouter.swift */,
+				BA1B4E491F62204A006A288B /* LogoutView.swift */,
+				BA1B4E4B1F6220D4006A288B /* LogoutPresenter.swift */,
+				BA1B4E4D1F622159006A288B /* LogoutInteractor.swift */,
+			);
+			name = container;
 			sourceTree = "<group>";
 		};
 		BA66CD891F61B4BE001201CA = {
@@ -345,6 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA62A05D1F64493700836C93 /* signinViewController.xib in Resources */,
 				BA66CDA01F61B4BE001201CA /* LaunchScreen.storyboard in Resources */,
 				BA66CD9D1F61B4BE001201CA /* Assets.xcassets in Resources */,
 				BA66CD9B1F61B4BE001201CA /* Main.storyboard in Resources */,
@@ -369,19 +411,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD1133731F61D6B600A6B256 /* RootView.swift in Sources */,
+				BA1B4E481F622016006A288B /* LogoutRouter.swift in Sources */,
 				BA66CD961F61B4BE001201CA /* AppDelegate.swift in Sources */,
 				ADEF6A4C1F61F57D00791CB4 /* WelcomeModule.swift in Sources */,
+				BA62A0581F64493700836C93 /* signinInteractor.swift in Sources */,
+				BA1B4E4A1F62204A006A288B /* LogoutView.swift in Sources */,
+				BA62A05B1F64493700836C93 /* signinRouter.swift in Sources */,
 				ADEF6A591F6213EE00791CB4 /* UserData.swift in Sources */,
 				AD1133791F61D6D400A6B256 /* RootRouter.swift in Sources */,
+				BA1B4E4C1F6220D4006A288B /* LogoutPresenter.swift in Sources */,
 				ADEF6A501F61F5A200791CB4 /* WelcomePresenter.swift in Sources */,
+				BA62A05C1F64493700836C93 /* signinViewController.swift in Sources */,
+				BA62A05A1F64493700836C93 /* signinProtocols.swift in Sources */,
 				ADEF6A561F620D9200791CB4 /* RootContract.swift in Sources */,
 				ADEF6A541F61F5B600791CB4 /* WelcomeRouter.swift in Sources */,
 				AD11336C1F61D58F00A6B256 /* AppModule.swift in Sources */,
 				ADEF6A4E1F61F58C00791CB4 /* WelcomeView.swift in Sources */,
 				AD11336F1F61D5E700A6B256 /* RootModule.swift in Sources */,
 				ADEF6A441F61DCA600791CB4 /* Promise.swift in Sources */,
+				BA62A0591F64493700836C93 /* signinPresenter.swift in Sources */,
 				ADEF6A521F61F5AE00791CB4 /* WelcomeInteractor.swift in Sources */,
+				BA1B4E461F621FD8006A288B /* LogoutModule.swift in Sources */,
 				AD1133771F61D6CC00A6B256 /* RootInteractor.swift in Sources */,
+				BA1B4E4E1F622159006A288B /* LogoutInteractor.swift in Sources */,
 				AD1133751F61D6C200A6B256 /* RootPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

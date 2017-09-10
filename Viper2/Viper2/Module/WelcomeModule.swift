@@ -19,10 +19,12 @@ class WelcomeModule: ViperModule {
     var presenter: Presenter
     var interactor: Interactor
     init() {
-        let view = RootView()
-        let router = WelcomeRouter(view: view)
-        let presenter = WelcomePresenter()
-        let interactor = WelcomeInteractor()
+        let router = WelcomeRouter()
+        let interactor = WelcomeInteractor(entityManager: UserDefaults.standard)
+        let presenter = WelcomePresenter(router: router, interactor: interactor)
+        let view = WelcomeView(presenter: presenter)
+        presenter.view = view
+        router.view = view
         self.router = router
         self.view = view
         self.presenter = presenter

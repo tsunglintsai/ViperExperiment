@@ -9,18 +9,18 @@
 import Foundation
 import Viper
 
-protocol WelcomeRouterDelegate: class {
-    func finishWelcome()
-}
 
 class WelcomeRouter {
     weak var view: UserInterface?
-    weak var delegate: WelcomeRouterDelegate?
-    init(view: UserInterface) {
-        self.view = view
-    }
+    weak var welcomeModuleDelegate: WelcomeModuleDelegate?
 }
 
 extension WelcomeRouter: Router {
     
+}
+
+extension WelcomeRouter {
+    func dismissWelcome() {
+        welcomeModuleDelegate?.dismissWelcome()
+    }
 }
